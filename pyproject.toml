@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "emailable-backport"
+version = "0.1.0"
+description = "This is the backport to python 2.7 of the official python wrapper for the Emailable API."
+authors = ["Bernardo Duarte <bernardoeiraduarte@gmail.com>"]
+homepage = "https://github.com/bernardoduarte"
+repository = "https://github.com/bernardoduarte/emailable-python-backport"
+license = "MIT"
+readme = "README.md"
+keywords = ["emailable", "email", "verification"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 2.7",
+    "Operating System :: OS Independent",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Utilities",
+    "Environment :: Web Environment"
+]
+packages = [
+    { include = "emailable" }
+]
+
+
+[tool.poetry.dependencies]
+python = "^2.7"
+requests = "^2.25.1"
+
+[tool.poetry.dev-dependencies]
+tox = "^3.14.3"
+pytest = "4.6.11"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

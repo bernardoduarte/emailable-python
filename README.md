@@ -1,10 +1,10 @@
-# Emailable Python Library
+# Emailable Python Library Backport
 
-[![Version](https://img.shields.io/pypi/v/emailable.svg)](https://pypi.org/project/emailable/)
-[![Build Status](https://travis-ci.com/emailable/emailable-python.svg)](https://travis-ci.com/emailable/emailable-python)
-[![Maintainability](https://api.codeclimate.com/v1/badges/dcb962c96795974051fc/maintainability)](https://codeclimate.com/github/emailable/emailable-python/maintainability)
+![License](https://img.shields.io/pypi/l/emailable-backport)
+![Python versions](https://img.shields.io/pypi/pyversions/emailable-backport)
+![Version](https://img.shields.io/pypi/v/emailable-backport)
 
-This is the official python wrapper for the Emailable API.
+This is the backport to Python 2.7 of the [Emailable's](https://github.com/emailable) official [python wrapper](https://github.com/emailable/emailable-python) for the Emailable API.
 
 ## Documentation
 
@@ -13,7 +13,7 @@ See the [Python API docs](https://emailable.com/docs/api/?python).
 ## Installation
 
 ```shell
-pip install emailable
+pip install emailable-backport
 ```
 
 ## Usage
@@ -105,9 +105,9 @@ response.reason_counts
 Tests can be run with the following command:
 
 ```shell
-python setup.py test
+poetry run tox
 ```
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/emailable/emailable-python.
+Bug reports and pull requests are welcome on GitHub at https://github.com/bernardoduarte/emailable-python-backport.
