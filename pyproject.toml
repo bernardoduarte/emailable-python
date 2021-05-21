@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "emailable-backport"
-version = "0.1.0"
+version = "1.0.0"
 description = "This is the backport to python 2.7 of the official python wrapper for the Emailable API."
 authors = ["Bernardo Duarte <bernardoeiraduarte@gmail.com>"]
 homepage = "https://github.com/bernardoduarte"

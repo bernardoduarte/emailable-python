@@ -4,7 +4,7 @@ from .error import (ClientError, AuthError, PaymentRequiredError,
                     ResourceNotFoundError, RateLimitExceededError,
                     ServerUnavailableError)
 
-class Client:
+class Client(object):
 
   def __init__(self, api_key):
     self.api_key = api_key

@@ -1,4 +1,4 @@
-class Response:
+class Response(object):
 
   def __init__(self, response):
     self.status_code = response.status_code

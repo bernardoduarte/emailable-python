@@ -9,10 +9,6 @@ def valid_client():
 def valid_response(valid_client):
   return valid_client.verify('johndoe+tag@emailable.com')
 
-  # def setUp(self):
-  #   self.client = emailable.Client('test_7aff7fc0142c65f86a00')
-  #   self.response = self.client.verify('johndoe+tag@emailable.com')
-
 def test_invalid_api_key():
   client = emailable.Client('test_7aff7fc0141c65f86a00')
   with pytest.raises(emailable.AuthError):
